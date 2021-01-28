@@ -6,3 +6,4 @@ Features:
 - music player (simulated version of spotify)
 - to-do list
 - Google search bar (functional)
+- weather
