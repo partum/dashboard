@@ -22,6 +22,8 @@
 #weather {
   background-color: #da627d;
   grid-column: 3/5;
+  font-size: 3rem;
+  padding-top: 5%;
 }
 #todo {
   background-color: #a53860;

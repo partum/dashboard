@@ -5,23 +5,23 @@ name = document.getElementById('name'),
 focus = document.getElementById('focus');
 
 //show time
-// function showTime() {
-//     let today = new Date(),
-//     hour = today.getHours(),
-//     min = today.getMinutes(),
-//     sec = today.getSeconds();
+function showTime() {
+    let today = new Date(),
+    hour = today.getHours(),
+    min = today.getMinutes(),
+    sec = today.getSeconds();
 
-//     //set am or pm
-//     const amPm = hour >= 12 ? 'PM' : 'AM';
+    //set am or pm
+    const amPm = hour >= 12 ? 'PM' : 'AM';
 
-//     //12hr Format
-//     hour = hour % 12 || 12;
+    //12hr Format
+    hour = hour % 12 || 12;
 
-//     //output time
-//     time.innerHTML = `${hour}<span>:</span>${addZero(min)}<span>:</span>${addZero(sec)} ${amPm}`;
+    //output time
+    time.innerHTML = `${hour}<span>:</span>${addZero(min)}<span>:</span>${addZero(sec)} ${amPm}`;
 
-//     setTimeout(showTime, 1000);
-// }
+    setTimeout(showTime, 1000);
+}
 
 //add zeros
 function addZero(n){
@@ -97,7 +97,7 @@ name.addEventListener('blur', setName);
 //focus.addEventListener('blur', setFocus);
 
 //Run
-//showTime();
+showTime();
 setBgGreet();
 getName();
 //getFocus();
