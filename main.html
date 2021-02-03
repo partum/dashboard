@@ -51,7 +51,19 @@
         <div id="goal-3" contenteditable="true">3</div>
       </div>
       <div id="search">
-        <div>
+        <form id="task-input" onsubmit="addTask();return false;">
+          <div class="line">
+            <input
+              type="text"
+              id="search-bar"
+              name="search"
+              placeholder="Use Google to search for something"
+              required
+            />
+            <button id="search">Search</button>
+          </div>
+        </form>
+        <div id="footer">
           Icons made by
           <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
           <a href="https://www.flaticon.com/" title="Flaticon"
