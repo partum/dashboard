@@ -5,9 +5,9 @@
 }
 .container {
   display: grid;
+  height: 100vh;
   grid-template-columns: 340px 25vw 25vw auto;
   grid-template-rows: 20vh 102px auto 20vh 20vh;
-  height: 100vh;
   text-align: center;
 }
 #email {
@@ -27,6 +27,12 @@
   font-size: 3rem;
   padding-top: 5%;
 }
+#location {
+  display: inline;
+}
+#time {
+  display: block;
+}
 #todo {
   background-color: #a53860;
   grid-column: 2/5;
@@ -45,6 +51,7 @@
   grid-column: 1/5;
   padding-top: 5%;
   font-size: 3rem;
+  background-color: aqua;
 }
 #search-bar {
   width: 30em;

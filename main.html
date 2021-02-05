@@ -30,9 +30,19 @@
         <span id="greeting">Howdy</span>
         <span id="name" contenteditable="true">Mikey</span>
       </div>
-      <div id="weather"><time id="time">2:40:00 PM</time></div>
+      <div id="weather">
+        <p id="location">Location</p>
+        <span id="temperature">temp</span>
+        <time id="time">2:40:00 PM</time>
+      </div>
       <div id="email">
-        <img src="email.svg" alt="email icon" style="width: 100px" />
+        <img
+          id="email-pic"
+          src="email.svg"
+          alt="email icon"
+          style="width: 100px"
+          onclick="changeImage();"
+        />
       </div>
       <div id="music">
         <iframe

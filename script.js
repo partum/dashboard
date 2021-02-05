@@ -125,3 +125,44 @@ showTime();
 setBgGreet();
 getName();
 getFocus();
+
+//email function
+picture = document.getElementById('email-pic');
+function changeImage(){
+    picture.src="closed same.svg";
+}
+
+//weather function
+//most of this is from Dev Ed
+window.addEventListener('load', ()=> {
+    let long;
+    let lat;
+    let temperature = document.getElementById('temperature');
+    let loc = document.getElementById('location');
+    //var tempC = 999;
+
+    if(navigator.geolocation){
+        navigator.geolocation.getCurrentPosition(position => {
+            long = position.coords.longitude;
+            lat = position.coords.latitude;
+
+            const api = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=e35cfe9374a6204182dbdfba3faba79c&units=metric`;
+
+            fetch(api)
+            .then(response =>{
+                return response.json();
+            })
+            .then(data => {
+                console.log(data);
+                const tempC = data.main.temp;
+                //tempC = Math.round(tempC * 10) / 10
+                temperature.innerHTML = tempC + ' °C';
+                const location = data.name;
+                loc.innerHTML = location;
+            });
+        });  
+    }else{
+        h1.textContent = "err"
+    }
+});
+
