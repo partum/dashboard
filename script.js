@@ -128,8 +128,12 @@ getFocus();
 
 //email function
 picture = document.getElementById('email-pic');
+list = document.querySelector('ul');
+let status = true;
 function changeImage(){
-    picture.src="closed same.svg";
+    picture.src = status == true ? 'open.svg' : 'closed.svg';
+    list.style.visibility = status == true ? 'visible' : 'hidden';
+    status = !status;
 }
 
 //weather function
