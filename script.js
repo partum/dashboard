@@ -170,3 +170,16 @@ window.addEventListener('load', ()=> {
     }
 });
 
+//search
+function gsearch(){
+    let query = document.getElementById("search-bar").value; 
+    var result = query.split(" ");
+    let search = "https://www.google.com/search?q="
+    result.forEach(element => {
+        search += element + '+';
+    });
+    search = search.slice(0, -1)
+    window.open(search); 
+    return false;
+}
+//https://www.google.com/search?q=javascript+date+object+day

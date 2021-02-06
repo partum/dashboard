@@ -70,17 +70,15 @@
         <div id="goal-3" contenteditable="true">3</div>
       </div>
       <div id="search">
-        <form id="task-input" onsubmit="addTask();return false;">
-          <div class="line">
-            <input
-              type="text"
-              id="search-bar"
-              name="search"
-              placeholder="Use Google to search for something"
-              required
-            />
-            <button id="search">Search</button>
-          </div>
+        <form id="search-form" onsubmit="return gsearch();">
+          <input
+            type="text"
+            id="search-bar"
+            name="search"
+            placeholder="Use Google to search for something"
+            required
+          />
+          <button id="search">Search</button>
         </form>
         <div id="footer">
           Icons made by
@@ -94,3 +92,5 @@
     <script src="script.js" async defer></script>
   </body>
 </html>
+
+<!-- onsubmit="search();return false;" -->
