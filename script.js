@@ -1,3 +1,4 @@
+//require('dotenv').config()
 //DOM Elements
 const time = document.getElementById('time'),
 greeting = document.getElementById('greeting'),
@@ -143,6 +144,7 @@ window.addEventListener('load', ()=> {
     let lat;
     let temperature = document.getElementById('temperature');
     let loc = document.getElementById('location');
+    const KEY = '154d616b6b9fa4a9123e0b1bea6cf23f';
     //var tempC = 999;
 
     if(navigator.geolocation){
@@ -150,7 +152,7 @@ window.addEventListener('load', ()=> {
             long = position.coords.longitude;
             lat = position.coords.latitude;
 
-            const api = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=e35cfe9374a6204182dbdfba3faba79c&units=metric`;
+            const api = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${KEY}&units=metric`;
 
             fetch(api)
             .then(response =>{
