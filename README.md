@@ -8,7 +8,7 @@ Features:
 - Music player. This is just pasted from Spotify's API.
 - To-Do List. This list asks the user to enter their top three goals. This is also modified from Traversy Media's tutorial.
 - Google search bar. Type in your querey and a google page with that search will be opened.
-- Weather and time. The time is from Traversy Media. The weather is from a Dev Ed tutorial: https://www.youtube.com/watch?v=wPElVpR1rwA I used Open Weather as my weather API.
+- Weather and time. The time is from Traversy Media. The weather is from a Dev Ed tutorial: https://www.youtube.com/watch?v=wPElVpR1rwA I used Open Weather as my weather API. I have realized that the weather feature doesn't work on most browsers because I am using an insecure (http) connection. Not really sure if anything can be done about this, so I'll just leave it for now.
 
 What I learned:
 I learned a lot about Local Storage. This is my second time using this JS feature. I think the first time I tried to use it I over complicated things.
